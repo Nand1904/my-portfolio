@@ -50,7 +50,7 @@ a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(163, 163, 163);
 }
 
 .logo {
@@ -147,7 +147,7 @@ section {
   min-height: fit-content;
 }
 
-.section-container{
+.section-container {
   display: flex;
 }
 
@@ -184,12 +184,12 @@ section {
   font-size: 1.75rem;
 }
 
-.title{
+.title {
   font-size: 3rem;
   text-align: center;
 }
 
-#socials-container{
+#socials-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -197,7 +197,7 @@ section {
 }
 
 /*ICONS*/
-.icon{
+.icon {
   cursor: pointer;
   height: 2rem;
 }
@@ -218,21 +218,24 @@ section {
   border-radius: 2rem;
 }
 
-.btn--color-1, .btn--color-2 {
-  border: rgb(54, 54, 54) 0.1rem solid;
+.btn--color-1,
+.btn--color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn--color-1:hover, .btn--color-2:hover {
+.btn--color-1:hover,
+.btn--color-2:hover {
   cursor: pointer;
 }
 
-.btn--color-1, .btn--color-2:hover {
-  background-color: rgb(54, 54, 54);
+.btn--color-1,
+.btn--color-2:hover {
+  background-color: rgb(53, 53, 53);
   color: white;
 }
 
 .btn--color-1:hover {
-  background: rgb(54, 54, 54);
+  background: rgb(53, 53, 53);
 }
 
 .btn--color-2 {
@@ -240,10 +243,10 @@ section {
 }
 
 .btn--color-2:hover {
-  border: rgb(181, 181, 181) 0.1rem solid;
+  border: rgb(163, 163, 163) 0.1rem solid;
 }
 
-.btn-container{
+.btn-container {
   gap: 1rem;
 }
 
@@ -257,6 +260,9 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  justify-content: space-between; /* Aligns the containers with space between them */
+  flex-wrap: wrap; /* Ensures that containers don't overflow if the screen is too small */
+  display: flex;
 }
 
 .about-details-container {
@@ -264,37 +270,191 @@ section {
   flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
   display: flex;
 }
 
-.about-pic{
+.about-pic {
   border-radius: 2rem;
 }
 
-.arrow{
+.arrow {
   position: absolute;
   bottom: 2.5rem;
   right: -5rem;
 }
 
-.details-container{
+.details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(54, 54, 54) 0.1rem solid;
-  border-color: rgb(181, 181, 181);
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
   text-align: center;
+  margin-bottom: 2rem;
+  margin: 1rem; /* Adds spacing between the individual experience containers */
 }
 
-.section-container{
+.section-container {
   gap: 4rem;
   height: 80%;
 }
 
-.section__pic-container{
+.section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.experience-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  flex: 1 1 calc(45% - 2rem);
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* Adjusting the arrow position if needed */
+.arrow {
+  position: absolute;
+  bottom: 2.5rem;
+  right: -5rem;
+}
+
+/* PROJECTS SECTION */
+#project {
+  position: relative;
+  padding-bottom: 4rem; /* Add padding to ensure space for the arrow */
+}
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.icon.arrow {
+  display: block;
+  margin: 20px auto;
+  width: 40px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+.icon.arrow:hover {
+  opacity: 0.8; /* Optional hover effect */
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-weight: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
