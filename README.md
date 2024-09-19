@@ -96,7 +96,7 @@ The media queries handle responsiveness for different screen sizes:
 
 ## Usage
 
-1. **Clone the Repository**
+**Clone the Repository**
 
    ```bash
    git clone https://github.com/yourusername/your-repository.git
