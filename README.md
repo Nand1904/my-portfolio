@@ -8,7 +8,7 @@ This repository contains the source code for my personal portfolio website. The 
 
 You can view the live version of the website here:
 
-[My Portfolio Website](https://yourdomain.com)
+[My Portfolio Website](https://my-brown-portfolio.com)
 
 ## Project Structure
 
