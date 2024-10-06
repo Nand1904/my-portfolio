@@ -103,6 +103,9 @@ The media queries handle responsiveness for different screen sizes:
 ## Usage
 
 **Clone the Repository**
+```git clone https://github.com/yourusername/your-repository.git```
 
-   ```bash
-   git clone https://github.com/yourusername/your-repository.git
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
